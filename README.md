@@ -19,7 +19,7 @@ The files you mostly want to look at are these:
 - `/custom/src/features/auth/MainComponent.vue` — a little more complicated example, showing how just an occurrence of a default import of a Vue component disables *all* the imports in the file from being handled by the plugin.
 - `/custom/src/features/auth/average.ts` — an example of the module resolution working perfectly as intended.
 
-Before you go into the files, here I provided an explanation of how my TS plugin is intended to work so you don't have to try and understand what's going on here with the imports on your own. Don't worry, the principle itself is not complicated whatsoever.
+Before you go into the files, below I have provided an explanation of how my TS plugin is intended to work so you don't have to try and understand what's going on here with the imports on your own. Don't worry, the principle itself is not complicated whatsoever.
 
 ## How the TS plugin is intended to work (and does work until it gets ignored)
 
@@ -45,4 +45,5 @@ This reproduction includes two plugins, each with its own responsibility:
 **/custom-scripts/vite-plugin.ts** — handles actual module resolution during build and dev server runtime. It works perfectly fine and was included in this reproduction just so you would able to run the dev server and understand how the system works in practice, if you want.
 
 Our project includes some other scripts to help work with this kind of system, but they are not included here as they aren't needed for the minimal reproduction.
+
 
