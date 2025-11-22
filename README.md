@@ -7,7 +7,7 @@ The problem in general is described in the comment referenced above with an addi
 
 The TypeScript plugin is made as a local package in `/custom-scripts/typescript-plugin` and is imported in `package.json` by the name `typescript-custom-resolver-plugin`. To make it work you need to:
 - Run `npm i`
-- Add the path "node_modules/typescript-custom-resolver-plugin" to the "typescript.tsserver.pluginPaths" setting in VSCode
+- Add the path `node_modules/typescript-custom-resolver-plugin` to the `typescript.tsserver.pluginPaths` setting in VSCode
 - Restart TS Server via the Command Palette
 
 You don't need to build the plugin as it is already built and included in the repo.
@@ -45,3 +45,4 @@ This reproduction includes two plugins, each with its own responsibility:
 **/custom-scripts/vite-plugin.ts** — handles actual module resolution during build and dev server runtime. It works perfectly fine and was included in this reproduction just so you would able to run the dev server and understand how the system works in practice, if you want.
 
 Our project includes some other scripts to help work with this kind of system, but they are not included here as they aren't needed for the minimal reproduction.
+
