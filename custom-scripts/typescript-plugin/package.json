@@ -1,0 +1,14 @@
+{
+  "name": "typescript-custom-resolver-plugin",
+  "version": "1.1.1",
+  "description": "Custom TypeScript Language Service Plugin",
+  "main": "./dist/typescript-plugin/index.js",
+  "author": "TalkativeGuy",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
+}
