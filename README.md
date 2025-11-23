@@ -42,7 +42,7 @@ This reproduction includes two plugins, each with its own responsibility:
 
 **/custom-scripts/typescript-plugin** — makes sure that TypeScript handles the imports by the same logic as Vite.
 
-**/custom-scripts/vite-plugin.ts** — handles actual module resolution during build and dev server runtime. It works perfectly fine and was included in this reproduction just so you would able to run the dev server and understand how the system works in practice, if you want.
+**/custom-scripts/vite-plugin.ts** — handles actual module resolution during build and dev server runtime. It works perfectly fine and was included in this reproduction just so you would able to run the dev server and understand how the system works in practice, if you want to.
 
 Our project includes some other scripts to help work with this kind of system, but they are not included here as they aren't needed for the minimal reproduction.
 
