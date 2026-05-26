@@ -5,7 +5,10 @@ I demonstrates how the "Vue — Official" extension for VSCode ignores local Typ
 
 The problem in general is described in the comment referenced above with an addition of [another one](https://github.com/vuejs/language-tools/issues/5638#issuecomment-3566421728) following it. In the files there are comments with a little more details.
 
-The TypeScript plugin is made as a local package in `/custom-scripts/typescript-plugin` and is imported in `package.json` by the name `typescript-custom-resolver-plugin`. To make it work you need to:
+The TypeScript plugin is made as a local package in `/custom-scripts/typescript-plugin` and is imported in `package.json` by the name `typescript-custom-resolver-plugin`.
+
+## To make it work
+
 - Run `npm i`
 - Add the path `node_modules/typescript-custom-resolver-plugin` to the `typescript.tsserver.pluginPaths` setting in VSCode
 - Restart TS Server via the Command Palette
